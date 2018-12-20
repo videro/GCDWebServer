@@ -348,7 +348,7 @@ NS_ASSUME_NONNULL_END
             }
           } else {
             [self abortRequest:nil withStatusCode:kGCDWebServerHTTPStatusCode_InternalServerError];
-            GWS_DNOT_REACHED();
+            //GWS_DNOT_REACHED(); //do just reply with InternalServerError and wait for the next request.
           }
         } else {
           [self abortRequest:nil withStatusCode:kGCDWebServerHTTPStatusCode_InternalServerError];
